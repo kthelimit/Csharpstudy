@@ -1,0 +1,50 @@
+using System;
+
+namespace StringTest2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Hello~~");
+            string str = "C#";
+            Console.WriteLine(str);
+
+            // Format() 메소드 사용 : {인덱스[,정렬][:서식문자]}
+            // => 서식문자
+            // D/d(대소문자 구분 안함) : 10진수 / x : 16진수 / n : 1000단위 구분기호(",") / f : 고정 소수점
+            // e : 지수 / c : 통화서식 지정 / g : 숫자 일반 형식 / p : 백분율 서식 지정 / r : 실수(라운드 트립 서식지정)
+
+            Console.WriteLine("어제부터 {1} {0}을 공부합니다.", "우리는", str);
+            Console.WriteLine("어제부터 {0, -7} {1}을 공부합니다.", "우리는", str);
+            Console.WriteLine("어제부터 {0, -4} {1}을 공부합니다.", "우리는", str);
+            Console.WriteLine("어제부터 {0, 7} {1}을 공부합니다.", "우리는", str);
+
+            int num = 1229;
+            string str2 = string.Format("Format() 메소드 연습중 : {0, -7:d}, {1}", num, str);
+            Console.WriteLine(str2);
+
+            str2 = string.Format("Format() 메소드 연습중 : {0, -7:x}, {1}", num, str);
+            Console.WriteLine(str2);
+
+            str2 = string.Format("Format() 메소드 연습중 : {0, -7:c}, {1}", num, str);
+            Console.WriteLine(str2);
+
+            str2 = string.Format("Format() 메소드 연습중 : {0, -7:n}, {1}", num, str);
+            Console.WriteLine(str2);
+
+            str2 = string.Format("Format() 메소드 연습중 : {0, -7:p}, {1}", num, str);
+            Console.WriteLine(str2);
+
+            str2 = string.Format("Format() 메소드 연습중 : {0, -7:f}, {1}", num, str);
+            Console.WriteLine(str2);
+
+            Console.WriteLine("Format() 메소드 연습중 : {0, -7:f}, {1}", num, str);
+
+            int a = 10;
+            int b = 20;
+            Console.WriteLine("a = " + a + ", b = " + b);
+            Console.WriteLine("a = {0}, b = {1}", a, b);
+        }
+    }
+}
