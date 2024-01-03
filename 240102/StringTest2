@@ -43,7 +43,7 @@ namespace StringTest2
             Console.WriteLine("Format() 메소드 연습중 : {0, -7:f}, {1}", num, str);
 
             // 문자열 보간: 
-            // 변수를 포함하는 문자열 출략 => ${변수명} 문자열"
+            // 변수를 포함하는 문자열 출력 => $"{변수명} 문자열"
             string name = "고길동";
             Console.WriteLine("{0}님 안녕하세요.", name);
             Console.WriteLine($"{name}님 안녕하세요.");
