@@ -10,14 +10,14 @@ namespace StarTest
             //    Console.WriteLine("*****");
             //}
 
-            //for (int i=0; i < 5; i++)
-            //{
-            //    for(int j=0; j < 5; j++)
-            //    {
-            //        Console.Write("*");
-            //    } //별찍기
-            //    Console.WriteLine();
-            //} //줄바꿔주는 역할
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    Console.Write("*");
+                } //별찍기
+                Console.WriteLine();
+            } //줄바꿔주는 역할
 
 
 
@@ -27,13 +27,23 @@ namespace StarTest
             // ****
             // *****
 
-            for (int i = 0; i <= 5; i++)
+            for (int i = 0; i < 5; i++)
             {
-                for (int j = 0; j < i; j++)
+                for (int j = 0; j <= i; j++)
                 {
                     Console.Write("*");
                 }
                 Console.WriteLine();
+            }
+
+
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    Console.WriteLine("i = {0}, j = {1}", i, j);
+                }
+                Console.WriteLine("=============" + (i+1)+ "회차 반복 끝");
             }
 
         }
