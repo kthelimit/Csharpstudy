@@ -1,0 +1,41 @@
+namespace StarTest
+{
+    internal class StarTest
+    {
+        static void Main(string[] args)
+        {
+
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Console.WriteLine("*****");
+            //}
+
+            //for (int i=0; i < 5; i++)
+            //{
+            //    for(int j=0; j < 5; j++)
+            //    {
+            //        Console.Write("*");
+            //    } //별찍기
+            //    Console.WriteLine();
+            //} //줄바꿔주는 역할
+
+
+
+            // *
+            // **
+            // ***
+            // ****
+            // *****
+
+            for (int i = 0; i <= 5; i++)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+
+        }
+    }
+}
