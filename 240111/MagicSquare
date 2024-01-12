@@ -39,7 +39,7 @@ namespace MagicSquare
                     if (--i == -1)
                     {
                         //행이 배열의 범위를 벗어나면 마지막 행으로 이동한다.
-                        i = 4;
+                        i = 4; // i =a.GetLength(0)-1;
                     }
                     if (++j == 5)
                     {
