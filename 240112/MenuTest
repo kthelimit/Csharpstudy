@@ -68,7 +68,7 @@ namespace MenuTest
                 {
                     case 1:
 
-                        balance = Deposit(balance);
+                        balance += Deposit();
 
                         break;
                     case 2:
@@ -105,15 +105,15 @@ namespace MenuTest
             return balance;
         }
 
-        static int Deposit(int balance)
+        static int Deposit()
         {
             Console.Write("입금할 금액을 입력하세요. > ");
             int money = Convert.ToInt32(Console.ReadLine());
-            balance += money;
+           
             //balance += Convert.ToInt32(Console.ReadLine()); //한줄로 입력할 수 있다.
             Console.WriteLine("{0}원을 입금했습니다.", money);
 
-            return balance;
+            return money;
         }
 
     }
